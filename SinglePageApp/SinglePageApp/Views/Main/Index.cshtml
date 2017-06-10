@@ -3,25 +3,32 @@
     ViewBag.Title = "Index";
 }
 
-<h2>The Star Wars API</h2>
-<div ng-controller="MainController">
-    <ul>
-        <li>Name: {{person.name}}</li>
-        <li>Height: {{person.height}}</li>
-        <li>Mass: {{person.mass}}</li>
-        <li>Eyes color: {{person.eye_color}}</li>
-        <li>Skin color: {{person.skin_color}}</li>
-        <li>Gender: {{person.gender}}</li>
-    </ul>
+<link href="~/Content/index1.css" rel="stylesheet" type="text/css"/>
 
-    <ul>
-        <li>Name: {{planet.name}}</li>
-        <li>Height: {{planet.rotation_period}}</li>
-        <li>Mass: {{planet.gravity}}</li>
-        <li>Eyes color: {{planet.terrain}}</li>
-        <li>Skin color: {{planet.climate}}</li>
-        <li>Gender: {{planet.population}}</li>
-    </ul>
+
+<h2>Endpoint 1 and 2</h2>
+<div ng-controller="MainController">
+    <div container>   
+        <ul id="list">
+            <li>Name: {{person.name}}</li>
+            <li>Height: {{person.height}}</li>
+            <li>Mass: {{person.mass}}</li>
+            <li>Eyes color: {{person.eye_color}}</li>
+            <li>Skin color: {{person.skin_color}}</li>
+            <li>Gender: {{person.gender}}</li>
+        </ul>
+        <ul id="list">
+            <li>Name: {{planet.name}}</li>
+            <li>Height: {{planet.rotation_period}}</li>
+            <li>Mass: {{planet.gravity}}</li>
+            <li>Eyes color: {{planet.terrain}}</li>
+            <li>Skin color: {{planet.climate}}</li>
+            <li>Gender: {{planet.population}}</li>
+        </ul>
+        <button id="btn" ng-click="increment();">Like</button>
+        <p class="likes">{{counter}}</p>
+        <button id="btn" ng-click="decrement();">Dislike</button>
+    </div>
 
 </div>
 

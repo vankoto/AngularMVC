@@ -9,4 +9,11 @@ app.controller('MainController', function($scope, $http) {
         then(function (response) {
             $scope.planet = response.data;
         });
+    $scope.counter = 0;
+    $scope.increment = function () {
+        $scope.counter++;
+    };
+    $scope.decrement = function () {
+        $scope.counter--;
+    };
 });
