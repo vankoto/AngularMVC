@@ -5,4 +5,8 @@ app.controller('MainController', function($scope, $http) {
         then(function (response) {
             $scope.person = response.data;
         });
+    $http.get('http://swapi.co/api/planets/2/').
+        then(function (response) {
+            $scope.planet = response.data;
+        });
 });
