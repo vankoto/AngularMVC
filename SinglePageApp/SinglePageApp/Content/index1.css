@@ -11,18 +11,31 @@
     font-size:18px;
     
 }
-#btn{
+#btn1{
     padding: 5px 5px;
+    color:#00BFFF;
+}
+#btn1:hover{
+    background-color: #00BFFF;
+    color:#fff;
+}
+#btn2{
+    padding: 5px 5px;
+    color:#F08080;
+}
+#btn2:hover{
+    background-color: #F08080;
+    color:#fff;
 }
 .likes{
-    background: #F65A5B;
+    background: #20B2AA;
     color: #fff;
     display: inline-block;
     font-size: 15px;
     min-width: 40px;
     height: 40px;
     border-radius: 50%;
-    margin: 0 45px 10px 40px;
+    margin: 0 45px 10px 43px;
     padding:8px 8px;
     text-align: center;
     font-weight: 200;
@@ -30,7 +43,7 @@
     transition: background 500ms;
 }
 .likes:hover{
-    background: #ffffff;
-    color: #F65A5B;
+    background: #fff;
+    color: #20B2AA;
 }
 

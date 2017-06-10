@@ -11,9 +11,21 @@ app.controller('MainController', function($scope, $http) {
         });
     $scope.counter = 0;
     $scope.increment = function () {
-        $scope.counter++;
+        if($scope.counter === 4 || $scope.counter === 7) {
+            $scope.counter += 3;
+        }else if ($scope.counter === 12) {
+            alert("Thank you for the good grade. :)");
+        }else if ($scope.counter === 12) {
+            return false;
+        }else {
+            $scope.counter += 2;
+        }
     };
     $scope.decrement = function () {
-        $scope.counter--;
+        if ($scope.counter === 0) {
+            return false;
+        } else {
+            $scope.counter--;
+        }
     };
 });
